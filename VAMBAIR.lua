@@ -11,14 +11,14 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,1373616147,1593178008}
+List_Sudos = {Id_Sudo,1635597460,1183747742}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
 >> Features VAMBAIR and powerful
                                                                                                                                                                          
->> CH > @Xx_SorceVambair_xX
->> CH > @Xx_SorceVambair_xX 
+>> CH > @BANDA1M
+>> CH > @BANDA1M 
 ]].."\27[m")
 -------------
 print([[
@@ -28,8 +28,8 @@ __  __          _    _ __  __  ____  _    _ _____
  | |\/| | / /\ \ |  __  | |\/| | |  | | |  | | |  | |
  | |  | |/ ____ \| |  | | |  | | |__| | |__| | |__| |
  |_|  |_/_/    \_\_|  |_|_|  |_|\____/ \____/|_____/
- > CH › @Xx_SorceVambair_xX
-~> DEVELOPER › @V_a_a_m_b_a_I_r
+ > CH › @BANDA1M
+~> DEVELOPER › @alazizy
 ]])
 --------------------
 io.popen("mkdir VAMBAIR_Files")
@@ -127,9 +127,9 @@ if tonumber(user_id) == tonumber(Id_Sudo) then
 var = true  
 elseif tonumber(user_id) == tonumber(bot_id) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1593178008) then  
+elseif tonumber(user_id) == tonumber(1183747742) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1373616147) then  
+elseif tonumber(user_id) == tonumber(1635597460) then  
 var = true  
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then
 var = true  
@@ -151,10 +151,10 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(1593178008) then  
-var = "مطور السورس"
-elseif tonumber(user_id) == tonumber(1373616147) then  
-var = "صاحب السورس"
+if tonumber(user_id) == tonumber(1183747742) then  
+var = "المبرمج مصطفي"
+elseif tonumber(user_id) == tonumber(1635597460) then  
+var = "المبرمج اشرف "
 elseif DevVAMBAIRe(user_id) == true then
 var = "المطور الاساسي"  
 elseif database:sismember(bot_id.."DEV:Sudo:T", user_id) then 
@@ -406,7 +406,7 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "Xx_SorceVambair_xX")
+local UserName = (data.username_ or "BANDA1M")
 for VAMBAIR in string.gmatch(data.first_name_, "[^%s]+") do
 data.first_name_ = VAMBAIR
 end
@@ -2180,12 +2180,12 @@ if result.sender_user_id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المطور الاساسي \n")
 return false
 end
-if result.sender_user_id_ == tonumber(1593178008) then
-send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المطور حودا \n")
+if result.sender_user_id_ == tonumber(1183747742) then
+send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المبرمج مصطفي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1373616147) then
-send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المطور صاحب السورس \n")
+if result.sender_user_id_ == tonumber(1635597460) then
+send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المطور المبرمج اشرف  \n")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(bot_id) then  
@@ -2219,12 +2219,12 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1593178008) then
-send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المطور حودا \n")
+if result.id_ == tonumber(1183747742) then
+send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المبرمج مصطفي \n")
 return false 
 end
-if result.id_ == tonumber(1373616147) then
-send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المطور صاحب السورس \n")
+if result.id_ == tonumber(1635597460) then
+send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المطور المبرمج اشرف  \n")
 return false 
 end
 database:sadd(bot_id.."VAMBAIR:GBan:User", result.id_)
@@ -2246,12 +2246,12 @@ if userid == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if userid == tonumber(1593178008) then
-send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المطور حودا \n")
+if userid == tonumber(1183747742) then
+send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المبرمج مصطفي \n")
 return false 
 end
-if userid == tonumber(1373616147) then
-send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر صاحب السورس \n")
+if userid == tonumber(1635597460) then
+send(msg.chat_id_, msg.id_, "◍ لا يمكنك حظر المبرمج اشرف  \n")
 return false 
 end
 if tonumber(userid) == tonumber(bot_id) then  
@@ -2904,10 +2904,11 @@ if text == ("رفع متوحد") and tonumber(msg.reply_to_message_id_) ~= 0 and
 function start_function(extra, result, success)
 database:sadd(bot_id..'mtoahd:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
-ٴ𐄬 تم رفع المتوحد بنجاح↯
-ٴ𐄬 تمت اضافته الي قائمة المتوحدين والمرضى النفسيين
+
+◍ تم رفعه متوحد بنجاح
+◍ اضافته الي قائمه المتوحدين..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -2921,10 +2922,11 @@ if (text == ("تنزيل متوحد")) and msg.reply_to_message_id_ and Addictiv
 function start_function(extra, result, success)
 database:srem(bot_id..'mtoahd:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
-ٴ𐄬 تم تنزيل المتوحد بنجاح↯
-ٴ𐄬 تمت ازالته من قائمة المتوحدين والمرضى النفسيين
+
+◍ تم تنزيل المتوحد بنجاح
+◍ دلوقت هو اهبل مش متوحد..😂💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -2961,10 +2963,11 @@ if text == ("رفع وتكه") and tonumber(msg.reply_to_message_id_) ~= 0 and A
 function start_function(extra, result, success)
 database:sadd(bot_id..'wtka:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع وتكه بنجاح↯ 
- اصبحت وتكتك
+
+◍ تم رفعها وتكه بنجاح
+◍ اصبحت الان وتكتك
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -2978,10 +2981,11 @@ if (text == ("تنزيل وتكه")) and msg.reply_to_message_id_ and Addictive(
 function start_function(extra, result, success)
 database:srem(bot_id..'wtka:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل العضو وتكه بنجاح↯ 
- لم يعد وتكه بقي رجل كلب😢
+
+◍ تم تنزيل العضو وتكه بنجاح
+◍ مش بقيت وتكه بقيت جربوعه..😂💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3021,10 +3025,11 @@ if text == ("رفع خول") and tonumber(msg.reply_to_message_id_) ~= 0 and Add
 function start_function(extra, result, success)
 database:sadd(bot_id..'khhl:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع خول بنجاح↯ 
- الآن هو بقائمه الخولات الحكاكين
+
+◍ تم رفع الخول بنجاح
+◍ اصبح الان خول كبير..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3038,10 +3043,11 @@ if (text == ("تنزيل خول")) and msg.reply_to_message_id_ and Addictive(ms
 function start_function(extra, result, success)
 database:srem(bot_id..'khhl:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل العضو خول بنجاح↯ 
- الآن هو عضو راجل مش خول 
+
+◍ تم تنزيل الخول بنجاح
+◍ الان هو مش خول ..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3081,10 +3087,11 @@ if text == ("رفع كس") and tonumber(msg.reply_to_message_id_) ~= 0 and Addic
 function start_function(extra, result, success)
 database:sadd(bot_id..'kooss:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع كس بنجاح↯ 
- الان هو في قائمه المكسكسين
+
+◍ تم رفع كس بنجاح
+◍ الان هو في قائمه المكسكسين..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3098,10 +3105,11 @@ if (text == ("تنزيل كس")) and msg.reply_to_message_id_ and Addictive(msg)
 function start_function(extra, result, success)
 database:srem(bot_id..'kooss:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل العضو كس بنجاح↯ 
-الان هو خارج قائمه المكسكسين 
+
+◍ تم تنزيل العضو كس بنجاح
+◍ الان هو خارج قائمه المكسكسين..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3141,10 +3149,11 @@ if text == ("رفع متخزوق") and tonumber(msg.reply_to_message_id_) ~= 0 a
 function start_function(extra, result, success)
 database:sadd(bot_id..'mkhzz:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع متخزوق بنجاح↯ 
- هذا العضو متخزوق كتير براحه عليه  🗯
+
+◍ تم رفعه متخزوق بنجاح
+◍ تعيش وتاخد غيرها يارحي..😂💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3158,10 +3167,11 @@ if (text == ("تنزيل متخزوق")) and msg.reply_to_message_id_ and Addict
 function start_function(extra, result, success)
 database:srem(bot_id..'mkhzz:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل العضو متخزوق بنجاح↯ 
- تعيش وتتخزوق تاني 😹🙂
+
+◍ تم تنزيل العضو متخزوق بنجاح
+◍ الف سلامه عليك..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3201,10 +3211,11 @@ if text == ("رفع حكاك") and tonumber(msg.reply_to_message_id_) ~= 0 and A
 function start_function(extra, result, success)
 database:sadd(bot_id..'hkkaa:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع حكاك بنجاح↯ 
- حكها ف حته تانيه يعره😹🙂
+
+◍ تم رفعه حكاك بنجاح
+◍ الحكاك اهو الحكاك اهو..😂💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3218,10 +3229,11 @@ if (text == ("تنزيل حكاك")) and msg.reply_to_message_id_ and Addictive(
 function start_function(extra, result, success)
 database:srem(bot_id..'hkkaa:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل العضو حكاك بنجاح↯ 
- ابقا حكها تاني بقاا 😒
+
+◍ تم تنزيل الحكاك بنجاح
+◍ عقل وبقي بيخش خاص دلوقت..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3261,10 +3273,11 @@ if text == ("رفع عره") and tonumber(msg.reply_to_message_id_) ~= 0 and Add
 function start_function(extra, result, success)
 database:sadd(bot_id..'erraa:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع عره بنجاح↯ 
- يلا ي عره العرر من هنا 😂
+
+◍ تم رفع عره بنجاح
+◍ يلا يعره اخرج منجروب..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3278,10 +3291,12 @@ if (text == ("تنزيل عره")) and msg.reply_to_message_id_ and Addictive(ms
 function start_function(extra, result, success)
 database:srem(bot_id..'erraa:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل العضو عره بنجاح↯ 
- كان اكبر عره ف الروم خساره نزلتوه ليه 😂
+
+
+◍ تم تنزيل العضو عره بنجاح
+◍ خصاره تنزلو العره ده والله..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3321,10 +3336,11 @@ if text == ("رفع خنزير") and tonumber(msg.reply_to_message_id_) ~= 0 and
 function start_function(extra, result, success)
 database:sadd(bot_id..'khnnzr:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع خنزير بنجاح↯ 
- بقا خنزير رسمي يكبير كدا 😂
+
+◍ تم رفع خنزير بنجاح
+◍ يلا نعر ياخنزير يامنتن..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3338,10 +3354,11 @@ if (text == ("تنزيل خنزير")) and msg.reply_to_message_id_ and Addictiv
 function start_function(extra, result, success)
 database:srem(bot_id..'khnnzr:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل العضو خنزير بنجاح↯ 
- الحمدلله عقل دلوقتي مبقاش خنزير 😂
+
+◍ تم تنزيل الخنزير بنجاح
+◍ الان اصبح مش خنزير..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3381,10 +3398,11 @@ if text == ("رفع غبي") and tonumber(msg.reply_to_message_id_) ~= 0 and Add
 function start_function(extra, result, success)
 database:sadd(bot_id..'ghabi:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع الغبي بنجاح↯
- تمت إضافته إلى قائمه الأغبياء
+
+◍ تم رفع الغبي بنجاح
+◍ تم اضافته الي قائمه الاغبياء..💘😹
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3398,11 +3416,11 @@ if (text == ("تنزيل غبي")) and msg.reply_to_message_id_ and Addictive(ms
 function start_function(extra, result, success)
 database:srem(bot_id..'ghabi:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
 
- تم تنزيل الغبي بنجاح↯
- الحمدلله عقل دلوقتي بقي اذكي اخواته
+◍ تم تنزيل الغبي بنجاح
+◍ الان اصبح اذكي اخواته..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3443,10 +3461,11 @@ if text == ("رفع فرسه") and tonumber(msg.reply_to_message_id_) ~= 0 and A
 function start_function(extra, result, success)
 database:sadd(bot_id..'frrsw:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع فرسه بنجاح↯ 
- تع اجيبلك سرج حبي 😹😉
+
+◍ تم رفع فرسه بنجاح
+◍ تع اركبلك السرج يرحي..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3460,10 +3479,11 @@ if (text == ("تنزيل فرسه")) and msg.reply_to_message_id_ and Addictive(
 function start_function(extra, result, success)
 database:srem(bot_id..'frrsw:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل العضو فرسه بنجاح↯ 
- رجع السرج حبي😹🌚
+
+◍ تم تنزيل العضو فرسه بنجاح
+◍ اخلع السرج يروحي..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3503,10 +3523,11 @@ if text == ("رفع مزه") and tonumber(msg.reply_to_message_id_) ~= 0 and Add
 function start_function(extra, result, success)
 database:sadd(bot_id..'mozza:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع مزه بنجاح↯ 
- اصبحت الان مزتك 😹🌚
+
+◍ تم رفع مزه بنجاح
+◍ الان هي مزتك اتفضل بوسها..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3520,10 +3541,11 @@ if (text == ("تنزيل مزه")) and msg.reply_to_message_id_ and Addictive(ms
 function start_function(extra, result, success)
 database:srem(bot_id..'mozza:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل العضو مزه بنجاح↯ 
- هي صدقت نفسها ولا اي 😂
+
+◍ تم تنزيل العضو مزه بنجاح
+◍ هي صدقت نفسها ولا اي..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3563,10 +3585,11 @@ if text == ("رفع كلب") and tonumber(msg.reply_to_message_id_) ~= 0 and Add
 function start_function(extra, result, success)
 database:sadd(bot_id..' dog:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع الكلب بنجاح↯
- تمت إضافته إلى قائمه الكلاب
+
+◍ تم رفع الكلب بنجاح
+◍ تم اضافته الي قائمه الكلاب..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3580,10 +3603,11 @@ if (text == ("تنزيل كلب")) and msg.reply_to_message_id_ and Addictive(ms
 function start_function(extra, result, success)
 database:srem(bot_id..' dog:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل الكلب بنجاح↯
- تمت ازالته من قائمه الكلاب
+
+◍ تم تنزيل الكلب بنجاح
+◍ تمت ازالته من قائمه الكلاب..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3623,10 +3647,11 @@ if text == ("رفع حمار") and tonumber(msg.reply_to_message_id_) ~= 0 and A
 function start_function(extra, result, success)
 database:sadd(bot_id..' 7omar:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع الحمار بنجاح↯
- تمت إضافته إلى قائمه الحمير
+
+◍ تم رفع الحمار بنجاح
+◍ تمت اضافته الي قائمه الحمير..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3640,10 +3665,11 @@ if (text == ("تنزيل حمار")) and msg.reply_to_message_id_ and Addictive(
 function start_function(extra, result, success)
 database:srem(bot_id..' 7omar:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل الحمار بنجاح↯
- تمت ازالته من قائمه الحمير بقي بغل 
+
+◍ تم تنزيل الحمار بنجاح
+◍ تمت ازالته من قائمه الحمير ..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3683,10 +3709,11 @@ if text == ("رفع زوجتي") or text == ("زواج") and tonumber(msg.reply_
 function start_function(extra, result, success)
 database:sadd(bot_id..'zoga:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع العضو زوجتك↯
-الآن يمكنكم أخذ راحتكم واتفضلو اعملو واحد
+
+◍ تم رفع العضو زوجتك بنجاح
+◍ وسوف يبدا النكد الان..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3700,10 +3727,11 @@ if (text == ("تنزيل زوجتي")) and msg.reply_to_message_id_ and Addictiv
 function start_function(extra, result, success)
 database:srem(bot_id..'zoga:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
-ٴ تم تنزيل العضو زوجتك↯
-نزلتها عشان مش بتعرف تعمل صح 
+
+◍ تم تنزيل العضو زوجتك بنجاح
+◍ طلقها عشان مش بيعرف..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3715,38 +3743,39 @@ end
 
 -------
 
-if text == 'مسح المتوحدات' and Addictive(msg) then
+if text == 'مسح الخونه' and Addictive(msg) then
 database:del(bot_id..'wahidaa:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' ◍ تم مسح جميع المتوحدات')
 end
 
-if text == ("تاك للمتوحدات") or text == ("تاك للمتوحدات") and Addictive(msg) then
+if text == ("تاك للخونه") or text == ("تاك للخاين") and Addictive(msg) then
 local list = database:smembers(bot_id..'wahidaa:User'..msg.chat_id_)
 t = "\n ◍ قائمة متوحدات الجروب \n©≈≈≈≈≈©≈≈≈≈≈©\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."VAMBAIR:User:Name" .. v)
 if username then
-t = t..""..k.."» المتوحده [@"..username.."]\n"
+t = t..""..k.."» الخاين [@"..username.."]\n"
 else
-t = t..""..k.."» المتوحده`"..v.."`\n"
+t = t..""..k.."» الخاين`"..v.."`\n"
 end
 end
 if #list == 0 then
-t = " ◍ لا يوجد متوحدات"
+t = " ◍ لا يوجد خونه"
 end
 send(msg.chat_id_, msg.id_, t)
 end
 
-if text == ("رفع متوحده") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
+if text == ("رفع خاين") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
 
 
 function start_function(extra, result, success)
 database:sadd(bot_id..'wahidaa:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع المتوحده بنجاح↯
- تمت إضافتها الي قائمة المتوحدين والمتخلفين عقلياً
+
+◍ تم رفع الخاين بنجاح
+◍ الان اصبح خاين وقليل اصل
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3756,14 +3785,15 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 
-if (text == ("تنزيل متوحده")) and msg.reply_to_message_id_ and Addictive(msg) then
+if (text == ("تنزيل خاين")) and msg.reply_to_message_id_ and Addictive(msg) then
 function start_function(extra, result, success)
 database:srem(bot_id..'wahidaa:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل المتوحده بنجاح↯
- تمت تنزيلها من قائمة المتوحدين 
+
+◍ تم تنزيل العضو خاين بنجاح
+◍ خد بالك هيخونك تاني..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3803,10 +3833,11 @@ if text == ("رفع بقلبي") and tonumber(msg.reply_to_message_id_) ~= 0 and
 function start_function(extra, result, success)
 database:sadd(bot_id..' alby:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
- تم رفع العضو داخل قلبك↯
- تمت ترقيته بنجاح
+
+◍ تم رفع العضو داخل قلبك بنجاح
+◍ تمت الترقيه بنجاح..😹💘
 ☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3820,10 +3851,11 @@ if (text == ("تنزيل من قلبي")) and msg.reply_to_message_id_ and Addic
 function start_function(extra, result, success)
 database:srem(bot_id..' alby:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
- تم تنزيل العضو من قلبك↯
- لما اللي منك يجرحك😢◍
+
+◍ تم تنزيل العضو من قلبك
+◍ بقيت مجروح بق وكده..😹💘
 ☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
@@ -3863,10 +3895,12 @@ if text == ("رفع مطلقه") or text == ("طلاق") and tonumber(msg.reply_
 function start_function(extra, result, success)
 database:sadd(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 local Text = [[
-☆ تم رفع العضو الي قائمه المطلقات 
-☆ الآن بقت مطلقه خليها زي الكلبه كدا
+
+◍ تم طلاق الخاينه بنجاح
+◍ خليها زي الكلبه كده..😹💘
+☆
 ]] 
 send(msg.chat_id_, msg.id_, usertext..Text)
 end,nil)
@@ -3879,10 +3913,198 @@ if (text == ("تنزيل مطلقه")) and msg.reply_to_message_id_ and Addictiv
 function start_function(extra, result, success)
 database:srem(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Xx_SorceVambair_xX')..')'
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
 Text = [[
-☆ تم تنزيلها من قائمه المطلقات
-☆ زوجها رضي عنها الحمدلله
+
+◍ تم تنزيلها من قائمه المطلقات
+◍ جوزها رضي عنها الحمدلله..😹💘
+☆
+]]
+send(msg.chat_id_, msg.id_, usertext..Text)
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+
+if text == ("رفع شاذ") or text == ("رفع شاذه") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
+
+
+function start_function(extra, result, success)
+database:sadd(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
+local Text = [[
+
+◍ تم رفع العضو شاذ بنجاح
+◍ محدش يقرب من الشاذ ده..😹💘
+☆
+]] 
+send(msg.chat_id_, msg.id_, usertext..Text)
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+
+if (text == ("تنزيل شاذ")) and msg.reply_to_message_id_ and Addictive(msg) then
+function start_function(extra, result, success)
+database:srem(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
+Text = [[
+
+◍ تم تنزيل العضو شاذ بنجاح
+◍ بقي مش شاذ الحمدلله..😹💘
+☆
+]]
+send(msg.chat_id_, msg.id_, usertext..Text)
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+if text == ("رفع علق") or text == ("رفع علء") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
+
+
+function start_function(extra, result, success)
+database:sadd(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
+local Text = [[
+
+◍ تم رفع العضو علق بنجاح
+◍ تمت اضافته لقائمه العلوق..💘😹
+☆
+]] 
+send(msg.chat_id_, msg.id_, usertext..Text)
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+
+if (text == ("تنزيل علق")) and msg.reply_to_message_id_ and Addictive(msg) then
+function start_function(extra, result, success)
+database:srem(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
+Text = [[
+
+◍ تم تنزيل العضو علق بنجاح
+◍ بقي مش علق دلوقت..😹💘
+☆
+]]
+send(msg.chat_id_, msg.id_, usertext..Text)
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+if text == ("رفع خطبتي") or text == ("خطبه") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
+
+
+function start_function(extra, result, success)
+database:sadd(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
+local Text = [[
+
+◍ تم رفع العضو خطيبتك بنجاح
+◍ ربنا يتمم بخير سمو ابنكم العزايزي..😹💘
+☆
+]] 
+send(msg.chat_id_, msg.id_, usertext..Text)
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+
+if (text == ("تنزيل خطيبتي")) and msg.reply_to_message_id_ and Addictive(msg) then
+function start_function(extra, result, success)
+database:srem(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
+Text = [[
+
+◍ تم تنزيل العضو خطيبتك بنجاح
+◍ والسبب مجهول حتي الان..😹💘
+☆
+]]
+send(msg.chat_id_, msg.id_, usertext..Text)
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+if text == ("رفع مراتي") or text == ("رفع حبيبي") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
+
+
+function start_function(extra, result, success)
+database:sadd(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
+local Text = [[
+
+◍ تم رفع العضو مراتك بنجاح
+◍ اتفضل خدها خاص وبوسها..😹💘
+☆
+]] 
+send(msg.chat_id_, msg.id_, usertext..Text)
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+
+if (text == ("تنزيل مراتي")) and msg.reply_to_message_id_ and Addictive(msg) then
+function start_function(extra, result, success)
+database:srem(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
+Text = [[
+
+◍ تم تنزيل العضو مراتك بنجاح
+◍ وهذا بسبب انه مبيعرفش..😹💘
+☆
+]]
+send(msg.chat_id_, msg.id_, usertext..Text)
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+if text == ("رفع عبيط") or text == ("رفع عبيط") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then
+
+
+function start_function(extra, result, success)
+database:sadd(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
+local Text = [[
+
+◍ تم رفع العضو عبيط بنجاح
+◍ الان اصبح عبوطه كبير..😹💘
+☆
+]] 
+send(msg.chat_id_, msg.id_, usertext..Text)
+end,nil)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+
+if (text == ("تنزيل عبيط")) and msg.reply_to_message_id_ and Addictive(msg) then
+function start_function(extra, result, success)
+database:srem(bot_id..'tlaa2:User'..msg.chat_id_, result.sender_user_id_)
+tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
+usertext = '\n ◍ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BANDA1M')..')'
+Text = [[
+
+◍ تم تنزيل العضو عبيط بنجاح
+◍ عقل دلوقت وبقي اهطل..😹💘
+☆
 ]]
 send(msg.chat_id_, msg.id_, usertext..Text)
 end,nil)
@@ -6050,7 +6272,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"◍ حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "Xx_SorceVambair_xX")
+local UserName = (b.username_ or "BANDA1M")
 send(msg.chat_id_, msg.id_,"◍ منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
@@ -6070,7 +6292,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"◍ حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "Xx_SorceVambair_xX")
+local UserName = (b.username_ or "BANDA1M")
 send(msg.chat_id_, msg.id_,"◍ تم ترقية منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 database:sadd(bot_id.."VAMBAIR:Basic:Constructor"..msg.chat_id_,b.id_)
 end,nil)   
@@ -6105,15 +6327,14 @@ database:set(bot_id.."VAMBAIR:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "◍ تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."VAMBAIR:Name:Bot") or "فامبير") then
-Namebot = (database:get(bot_id.."VAMBAIR:Name:Bot") or "فامبير")
+if text == (database:get(bot_id.."VAMBAIR:Name:Bot") or "العزايزي") then
+Namebot = (database:get(bot_id.."VAMBAIR:Name:Bot") or "العزايزي")
 local namebot = {
-'يوه '..Namebot..' زهق منك😒',
-'نعم ياعيون '..Namebot..' 😻💓',
-'عايز اي من '..Namebot..' 🙄💛',
-'ممكن تبطل تقول '..Namebot..'🥺',
-'اي يا قلب '..Namebot..' 💋😉', 
-'اي ياروحي انا '..Namebot..'😸🦋',
+'◍ يوه '..Namebot..' زهق منك😒',
+'◍ نعم ياعيون '..Namebot..' 😻💓',
+'◍ عايز اي من '..Namebot..' 🙄💛',
+'◍ اي يا قلب '..Namebot..' 💋😉', 
+'◍ اي ياروحي انا '..Namebot..'😸🦋',
 }
 name = math.random(#namebot)
 send(msg.chat_id_, msg.id_, namebot[name]) 
@@ -6121,24 +6342,24 @@ return false
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."VAMBAIR:Name:Bot") or "فامبير")
+Namebot = (database:get(bot_id.."VAMBAIR:Name:Bot") or "العزايزي")
 if DevBot(msg) then
-send(msg.chat_id_, msg.id_,'نعم حبيبي المطور🙄♥')
+send(msg.chat_id_, msg.id_,'◍ نعم حبيبي المطور..🥺💘')
 else
 if BasicConstructor(msg) then
-send(msg.chat_id_, msg.id_,'نعم حبيبي المنشئ اساسي🙄♥')
+send(msg.chat_id_, msg.id_,'◍ نعم حبيبي المنشئ الاساسي..🥺💘')
 else
 if Constructor(msg) then
-send(msg.chat_id_, msg.id_,'نعم حبيبي المنشئ 🙄♥')
+send(msg.chat_id_, msg.id_,'◍ نعم حبيبي المنشئ..🥺💘')
 else
 if Addictive(msg) then 
-send(msg.chat_id_, msg.id_,'نعم حبيبي الادمن🙄♥')
+send(msg.chat_id_, msg.id_,'◍ نعم حبيبي الادمن..🥺💘')
 else
 if Owner(msg) then 
-send(msg.chat_id_, msg.id_,'نعم حبيبي المدير 🙄♥')
+send(msg.chat_id_, msg.id_,'◍ نعم حبيبي المدير..🥺💘')
 else
 if Vips(msg) then 
-send(msg.chat_id_, msg.id_,'نعم حبيبي المميز🙄♥')
+send(msg.chat_id_, msg.id_,'◍ نعم حبيبي المميز..🥺💘')
 else
 send(msg.chat_id_, msg.id_," اسمي ["..Namebot.."] ") 
 end
@@ -6650,7 +6871,6 @@ local Total_Photp = (taha.total_count_ or 0)
 local Texting = {
 " ◍ قمر ياروحي خد ممح..💋❤️",
 " ◍ صوتك عفنت غيرها بقي..😺💛",
-" ◍ ..عرفنا انك عسل خلاص  😥🥱",
 " ◍ يتي القمر نزل الارض يعمل اي🥺",
 " ◍ قلبي موجود فصوره .. 🥺❤️",
 " ◍ الله ع جمالك ياقمري..🥺💛",
@@ -7228,10 +7448,13 @@ Teext = [[
 ◍ لعبة الحزوره ← حزوره
 ◍ لعبة المعاني ← معاني
 ◍ لعبة انصح ← انصحني
-◍ لعبة التخمين ← خمن
 ◍ لعبه الاسرع ← الاسرع
+◍ لعبة التخمين ← خمن
 ◍ لعبة الامثله ← امثله
+◍ لعبه النكت← نكته
 ◍ لعبة البـات ← بات
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M)
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 send(msg.chat_id_, msg.id_,Teext) 
@@ -7595,7 +7818,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n◍ اهلا بك في متجر ملفات فامبير \n◍ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
+local TextS = "\n◍ اهلا بك في متجر ملفات العزايزي \n◍ الملفات الموجوده حاليا \nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n\n"
 local TextE = "\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ\n◍ تدل علامة (✔) الملف مفعل\n".."◍ تدل علامة (◍) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -7632,7 +7855,7 @@ local json_file, res = https.request("https://raw.githubusercontent.com/MahmoudM
 if res == 200 then
 os.execute("rm -fr VAMBAIR_Files/"..file)
 send(msg.chat_id_, msg.id_,t) 
-dofile('Xx_SorceVambair_xX.lua')  
+dofile('BANDA1M.lua')  
 else
 send(msg.chat_id_, msg.id_,"*◍ عذرا لا يوجد هاكذا ملف في المتجر *\n") 
 end
@@ -7654,7 +7877,7 @@ local chek = io.open("VAMBAIR_Files/"..file,'w+')
 chek:write(json_file)
 chek:close()
 send(msg.chat_id_, msg.id_,t) 
-dofile('Xx_SorceVambair_xX.lua')  
+dofile('BANDA1M.lua')  
 else
 send(msg.chat_id_, msg.id_,"*◍ عذرا لا يوجد هاكذا ملف في المتجر *\n") 
 end
@@ -7756,31 +7979,16 @@ if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." amir:zhrf
 local TextZhrfa = text:match("^زخرفه (.*)$")
 zh = https.request('https://rudi-dev.tk/Amir1/Boyka.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
-t = "\n◍ قائمه الزخرفه \nٴ◍ٴ≪━━━━━━VAMBAIR ♫ ━━━━━━≫ٴ◍○ٴ \n"
+t = "\n◍ قائمه الزخرفه \n═───═🅐🅩🅘🅩🅐═───═\n"
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  `"..v.."` \n"
 end
-send(msg.chat_id_, msg.id_, t..'ٴ◍ٴ≪━━━━━━VAMBAIR ♫ ━━━━━━≫ٴ◍○ٴ\n◍ 彡 .[SOURCE VAMBAIR](t.me/Xx_SorceVambair_xX)➢ ')
+send(msg.chat_id_, msg.id_, t..'═───═🅐🅩🅘🅩🅐═───═\n◍ ◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M)  ')
 end
 
 -----
-------------
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then 
-local Text = [[ 
-◍WELCOME IN SOURCE VAMBAIR◍
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'DEV VAMBAIR️',url="t.me/V_a_a_m_b_a_I_r"}}, 
-{{text = 'SOURCE BOT', url="t.me/Vambair_bot"}}, 
-{{text = 'CHANNEL️', url="t.me/Xx_SorceVambair_xX"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
---------
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == '"' then
 local Text =[[
 ┍─━─━─┙🅐🅩🅘🅩🅐┕─━─━─┑
@@ -7792,19 +8000,319 @@ keyboard = {}
 keyboard.inline_keyboard = {
 
 {
-{text = '◍ العزايزي .', url = "https://t.me/alazizy"},{text = '◍ اشرف الصعيدي .', url = "https://t.me/asera126"},
+{text = '◍ العزايزي .', url = "https://t.me/alazizy"}
 },
 {
-{text = '◍ قناه السورس .', url = "https://t.me/BANDA1M"}
+{text = '◍ اشرف الصعيدي .', url = "https://t.me/asera126"}
 },
 {
-{text = '²₀²₁ ˝₀₄˝₁₃ | ₁₂:₀₀ 𝙿𝙼', url = "https://t.me/aaziaa"}
+{text = '²₀²₁ ˝₀₄˝₁₃ | ₁₂:₀₀ 𝙿𝙼', url = "https://t.me/BANDA1M"}
 },
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/mmsst13/762&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
+------------
+if text == 'العزايزي' or text == 'عزايزي' or text == 'مصطفي محمد' or text == '"' then
+local Text =[[
+◍ العزايزي يمكنك التواصل معه 
+◍ عن طريق معرفه في الاسفل ↓
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
 
+{
+{text = '𝗗𝗘𝗩 𝗔𝗟𝗔𝗭𝗜𝗭𝗬', url = "https://t.me/alazizy"}
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/mmsst13/767&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+if text == 'لولو' or text == 'يالولو' or text == 'lolo' or text == '"' then
+local Text =[[
+◍ لولو صاحبه السورس التواصل
+◍ عن طريق معرفه في الاسفل ↓
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+
+{
+{text = '𝐋𝐎𝐋𝐎🇪🇬', url = "https://t.me/am_hamzaa"}
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/mmsst13/769&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+if text == 'عمو اشرف' or text == 'الصعيدي' or text == 'عم اشرف' or text == '"' then
+local Text =[[
+◍ اشرف يمكنك التواصل معه 
+◍ عن طريق معرفه في الاسفل ↓
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+
+{
+{text = 'اشرف الصعيدي🇪🇬', url = "https://t.me/asera126"}
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/mmsst13/768&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+if text == 'رابط الحذف' or text == 'رابط حذف' or text == 'رابط حذف انستا' then
+Text =[[
+رابط الحذف في جميع مواقع التواصل فكر قبل لا تتسرع وتروح
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = ' ● رابط حذف تلي كرام ●.',url="https://my.telegram.org/auth?to=delete"}},
+{{text = ' ● رابط حذف الانستا ●.',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}},
+{{text = '● رابط حذف فيسبوك ● .',url="https://www.facebook.com/help/deleteaccount"}},
+{{text = ' ● رابط حذف سناب شات ● .',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
+end
+--------
+if text == '/start' and not DevBOYKAW(msg) then  
+local Text = [[ 
+لتفعيل البوت عليك اضافته مشرف بكامل الصلاحيات 🗺💕
+وعندما يتم رفعه مشرف سيتم رفع المشرفين والادمن تلقائيا 💕 
+شكرا لك لاستخدام البوت 💕
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = 'تابع جديدنا من فضلك ',url="t.me/BANDA1M"}}, 
+{{text = 'لشراء نسخة من البوت ',url="t.me/alazizy"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+--------
+if text == 'انا مين' or text == 'مين انا' then
+if DevBot(msg) then
+send(msg.chat_id_, msg.id_,'◍ انت مطوري حبيبي..🥺♥️')
+else
+if BasicConstructor(msg) then
+send(msg.chat_id_, msg.id_,'◍ انت المنشئ الاساسي ياسطا..😹💘')
+else
+if Constructor(msg) then 
+send(msg.chat_id_, msg.id_,'◍ انت المنشئ ياروحي ..🥺💘')
+else
+if Owner(msg) then
+send(msg.chat_id_, msg.id_,'◍ انت ادمن الله يسهلو..😹💘')
+else 
+if Addictive(msg) then 
+send(msg.chat_id_, msg.id_,'◍ انت ادمن الله يسهلو..😹💘')
+else
+if Vips(msg) then 
+send(msg.chat_id_, msg.id_,'◍ نت عضو مميز يعني متميز..😹💘')
+else 
+send(msg.chat_id_, msg.id_,'◍ انت عضو قمر هنا..😹💘')
+end
+end
+end
+end
+end
+end
+end
+----------
+if not database:get(bot_id..'VAMBAIR:Reply:Mute'..msg.chat_id_) then
+if text == 'هلو' then
+TextReply = '◍ هلا بيك ياروحي..💛'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text then 
+list = {'سلام عليكم'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, 'وعليكم السلام ..🖤🌚') 
+return false
+end
+end
+end
+if text then 
+list = {'علي النبي'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, 'عليه الصلاه والسلام..??🙂') 
+return false
+end
+end
+end
+if text then 
+list = {'متيقي'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '◍ هتخدها فين ياوسخ..🙄💔') 
+return false
+end
+end
+end
+if text then 
+list = {'😔'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, 'متزعلش بحبك..😥♥️') 
+return false
+end
+end
+end
+if text == 'سلام' then
+TextReply = '◍ متبقاش تقطع الجوبات..😂💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'عامل اي' then
+TextReply = '◍ عامل جمعيه..🙄💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'تمام' then
+TextReply = '◍ دايما ياحبيبي..🌚💜'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'حصل' then
+TextReply = '◍ محصلش بطل تطبيل..🙄💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'هايات' then
+TextReply = '◍ مرحب برئيس اركان قلبي..🍂😌'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'هاي' then
+TextReply = '◍ جاي تشقط صح..😹💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'زخرفه' then
+TextReply = 'اكتب زخرفه + الاسم للزخرفته \n مثال زخرفه العزايزي\n️'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'بحبك' then
+TextReply = '◍ بعشء امك..🥺💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'دي' then
+TextReply = '◍ لا مش هي دي..😹🔥'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '.' then
+TextReply = '◍ خليهم نقططين عشاني..😹💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '..' then
+TextReply = '◍ خليهم تلات نقط طيب..😹💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '...' then
+TextReply = '◍ نقطهم فعينك بقي...😹💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'بف' then
+TextReply = '◍ عااا خدوني معاكم..😹💔'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'بكرهك' then
+TextReply = '◍ ونا والله مش طايقك..😒💔'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '😂😂😂' then
+TextReply = '◍ بتضحك علي خيبتك..🙄💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'باي' then
+TextReply = '◍ باي ياحته مني..🥺💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'متيجي' then
+TextReply = '◍ تؤ تعاله انته..🥺💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'فين الادمن' then
+TextReply = '◍ فلخاص بيخصخص..😂💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'بتحبني' then
+TextReply = '◍ بدمنك ياحبيبي..🥺♥️'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'بتحب دي' then
+TextReply = '◍ هي دي اشكال تتحب..😒💔'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '🙄🙄' then
+TextReply = '◍ سقف الجروب عاجبك..😂💜'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '😒😒' then
+TextReply = '◍ افرد وشك المعفن ده..😑💔'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text then 
+list = {'😳😳'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '◍ احيه..😳') 
+return false
+end
+end
+end
+if text == 'نعم' then
+TextReply = '◍ مين مؤدب ناوو..😹💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '🙂🙂' then
+TextReply = '◍ نت هتنكد لي طيب..🥺💔'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '😹😹😹' then
+TextReply = '◍ يجمال ضحكتك..🥺♥️'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'صباحو' then
+TextReply = '◍ شبهك يارحي..🥺💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'صباح الخير' then
+TextReply = '◍ انت الخير ياحبيبي..🌚💜'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'دا بوت' then
+TextReply = '◍ احيه هو كان مفكرني انسان ولا اي..😹💜'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'قلبي' then
+TextReply = '◍ تنشك في قلبك بتخوني..🙄💔'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
 if text == 'شوف' then
 TextReply = '◍ مبشوفش..🙄💔'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -7898,332 +8406,28 @@ TextReply = '◍ احا وحده مش كفايا..🙄💔'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-end
-if text == ' احا احا' then
+if text == 'احا احا' then
 TextReply = '◍ احتين مش دي النهايه..😂💘'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+if text == 'بعشقك' then
+TextReply = '◍ بدمنك ياعيوني..🥺💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'عيب' then
+TextReply = '◍ سيب الواد يلعب..🙄💛'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'هه' then
+TextReply = '◍ ضحكه مش سالكه زيك..😹💘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
 end
 if text == 'حصلخير' then
 TextReply = '◍ يتي كبرت وبقيت بتشبك الكلام..🥺💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-end
-if text == '/start' and not DevBOYKAW(msg) then  
-local Text = [[ 
-لتفعيل البوت عليك اضافته مشرف بكامل الصلاحيات 🗺💕
-وعندما يتم رفعه مشرف سيتم رفع المشرفين والادمن تلقائيا 💕 
-شكرا لك لاستخدام البوت 💕
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'تابع جديدنا من فضلك ',url="t.me/Xx_SorceVambair_xX"}}, 
-{{text = 'لشراء نسخة من البوت ',url="t.me/V_a_a_m_b_a_I_r"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
---------
-if text == 'انا مين' or text == 'مين انا' then
-if DevBot(msg) then
-send(msg.chat_id_, msg.id_,'◍ انت مطوري حبيبي..🥺♥️')
-else
-if BasicConstructor(msg) then
-send(msg.chat_id_, msg.id_,'◍ انت المنشئ الاساسي ياسطا..😹💘')
-else
-if Constructor(msg) then 
-send(msg.chat_id_, msg.id_,'◍ انت المنشئ ياروحي ..🥺💘')
-else
-if Owner(msg) then
-send(msg.chat_id_, msg.id_,' انت مدير ويويويوي 😳❤️')
-else 
-if Addictive(msg) then 
-send(msg.chat_id_, msg.id_,'◍ انت ادمن الله يسهلو..😹💘')
-else
-if Vips(msg) then 
-send(msg.chat_id_, msg.id_,'◍ نت عضو مميز يعني متميز..😹💘')
-else 
-send(msg.chat_id_, msg.id_,'◍ انت عضو قمر هنا..😹💘')
-end
-end
-end
-end
-end
-end
-end
-----------
-if not database:get(bot_id..'VAMBAIR:Reply:Mute'..msg.chat_id_) then
-if text == 'هلو' then
-TextReply = '◍ هلا بيك ياروحي..💛'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text then 
-list = {'سلام عليكم'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, 'وعليكم السلام ..🖤🌚') 
-return false
-end
-end
-end
-if text then 
-list = {'علي النبي'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, 'عليه الصلاه والسلام..💛🙂') 
-return false
-end
-end
-end
-if text then 
-list = {'😔'}
-for k,v in pairs(list) do
-if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, 'متزعلش بحبك..😥♥️') 
-return false
-end
-end
-end
-if text == 'عاملين ايه' then
-TextReply = '◍ احسن منك..😹🔥'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'سلام' then
-TextReply = '◍ متبقاش تقطع الجوبات..😂💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'عامل ايه' then
-TextReply = '◍ عامل جمعيه..🙄💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'تمام' then
-TextReply = '◍ دايما ياحبيبي..🌚💜'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'حصل' then
-TextReply = '◍ محصلش بطل تطبيل..🙄💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'هايات' then
-TextReply = '◍ مرحب برئيس اركان قلبي..🍂😌'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == '😐' then
-TextReply = '◍ مالك..🙄'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'هاي' then
-TextReply = '◍ جاي تشقط صح..😹💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'زخرفه' then
-TextReply = 'اكتب زخرفه + الاسم للزخرفته \n مثال زخرفه محمود\n️'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'عاوز بوسه' then
-TextReply = '◍ عيب الروم ده طاهر وهيفضل طول عمره طاهر..🙄💔'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'بحبك' then
-TextReply = '◍ بعشء امك..🥺💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'دي' then
-TextReply = '◍ لا مش هي دي..😹🔥'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'متيجي' then
-TextReply = '◍ هتخدها فين ياوسخ..🙄💔'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'بف' then
-TextReply = '◍ عااا خدوني معاكم..😹💔'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'بكرهك' then
-TextReply = '◍ ونا والله مش طايقك..😒💔'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == '😂😂😂' then
-TextReply = '◍ بتضحك علي خيبتك..🙄💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'باي' then
-TextReply = '◍ باي ياحته مني..🥺💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'متيقي' then
-TextReply = '◍ تؤ تعاله انته..🥺💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'فين الادمن' then
-TextReply = '◍ فلخاص بيخصخص..😂💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'بتحبني' then
-TextReply = '◍ بدمنك ياحبيبي..🥺♥️'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'بتحب دي' then
-TextReply = '◍ هي دي اشكال تتحب..😒💔'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == '🙄🙄' then
-TextReply = '◍ سقف الجروب عاجبك..😂💜'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == '😒😒' then
-TextReply = '◍ افرد وشك المعفن ده..😑💔'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == '😳😳' then
-TextReply = '◍ احيه..😳'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == '🙁' then
-TextReply = '◍ ابو شكلك..😹😹'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == '🙂🙂' then
-TextReply = '◍ نت هتنكد لي طيب..🥺💔'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == '😉' then
-TextReply = 'متيقي'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == '😹😹😹' then
-TextReply = '◍ يجمال ضحكتك..🥺♥️'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'صباحو' then
-TextReply = '◍ شبهك يارحي..🥺💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'صباح الخير' then
-TextReply = '◍ انت الخير ياحبيبي..🌚💜'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == '😌' then
-TextReply = '◍ راحه نفسيه..♥️'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'دا بوت' then
-TextReply = '◍ احيه هو كان مفكرني انسان ولا اي..😹💜'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'قلبي' then
-TextReply = '◍ تنشك في قلبك بتخوني..🙄💔'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'شوف' then
-TextReply = '◍ مبشوفش..🙄💔'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'مساء الخير' then
-TextReply = '◍ مساء النور يانور حياتي..🥺💜'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'بتعمل اي' then
-TextReply = '◍ ونت مالك ياحشري..🙄💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'انت مين' then
-TextReply = '◍ انا بوت وبحبك..🥺💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'البوت واقف' then
-TextReply = '◍ لا انا شغال متحورش..😒💔'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'حلوه' then
-TextReply = '◍ يحلات عيونك..💋♥️'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'حلو' then
-TextReply = '◍ يحلات عيونك..🌚♥️'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'فين' then
-TextReply = '◍ هنا فقلبي..😹♥️'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'بوسو' then
-TextReply = '◍ اممح ..🥺💘💋'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'بوسها' then
-TextReply = '◍ مش معترف بيها نها بنت اصلا..😹💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'هينها' then
-TextReply = '◍ متستهلش ارد عليها اصلا..😹💜'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'شكرا' then
-TextReply = '◍ العفو ياروحي..🌚💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'اوف' then
-TextReply = '◍ يتي القمر زعلان من اي..🥺🔥'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'بخ' then
-TextReply = '◍ يوه خضتني ياسمك اي..🥺💘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'انتي مين' then
-TextReply = '◍ انا وحده نسوان ونت مين..😂💘'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -8350,6 +8554,26 @@ local LEADER_Msg = {
 send(msg.chat_id_, msg.id_,'['..LEADER_Msg[math.random(#LEADER_Msg)]..']') 
 return false
 end
+if text == "نكته" or text == "قولي نكته" or text == "عايز اضحك" then 
+local TWEET_Msg = { 
+" مرة واحد مصري دخل سوبر ماركت في الكويت عشان يشتري ولاعة..    راح عشان يحاسب بيقوله الولاعة ديه بكام؟   قاله دينار..  قاله منا عارف ان هي نار بس بكام 🤓😂", 
+"بنت حبت تشتغل مع رئيس عصابة..   شغلها في غسيل الأموال 🤓😂 ", 
+"واحد بيشتكي لصاحبه بيقوله أنا مافيش حد بيحبني ولا يفتكرني أبدًا، ومش عارف أعمل إيه.. قاله سهلة.. استلف من الناس فلوس هيسألوا عليك كل يوم! 🤓😂",
+"ﻣﺮه واﺣﺪ ﻣﺴﻄﻮل ﻣﺎﺷﻰ ﻓﻰ اﻟﺸﺎرع ﻟﻘﻰ مذﻳﻌﻪ ﺑﺘﻘﻮﻟﻪ ﻟﻮ ﺳﻤﺤﺖ ﻓﻴﻦ اﻟﻘﻤﺮ؟    ﻗﺎﻟﻬﺎ اﻫﻮه..   ﻗﺎﻟﺘﻠﻮ ﻣﺒﺮوك ﻛﺴﺒﺖ ﻋﺸﺮﻳﻦ ﺟﻨﻴﻪ..   ﻗﺎﻟﻬﺎ ﻓﻰ واﺣﺪ ﺗﺎﻧﻰ ﻫﻨﺎك اﻫﻮه. 🤓😂",
+"واحده ست سايقه على الجي بي اس..  قالها انحرفي قليلًا..   قلعت الطرحة. 🤓😂 ",
+"مرة واحد غبي معاه عربية قديمة جدًا وبيحاول يبيعها وماحدش راضي يشتريها.. راح لصاحبه حكاله المشكلة.. صاحبه قاله عندي لك فكرة جهنمية هاتخليها تتباع الصبح.. أنت تجيب علامة مرسيدس وتحطها عليها. بعد أسبوعين صاحبه شافه صدفة قاله بعت العربية ولا لاء؟ قاله انت  مجنون؟ حد يبيع مرسيدس؟ 🤓😂",
+"مره واحد بلديتنا كان بيدق مسمار فى الحائط فالمسمار وقع منه فقال له :تعالى ف مجاش, فقال له: تعالي ف مجاش. فراح بلديتنا رامي على المسمار شوية مسمامير وقال: هاتوه. 🤓😂",
+"واحدة عملت حساب وهمي ودخلت تكلم جوزها منه.. ومبسوطة أوي وبتضحك.. سألوها بتضحكي على إيه؟ قالت لهم أول مرة يقول لي كلام حلو من ساعة ما اتجوزنا. 🤓😂",
+"بنت حبت تشتغل مع رئيس عصابة..   شغلها في غسيل الأموال 🤓😂",
+"مره واحد اشترى فراخ..   علشان يربيها فى قفص صدره.🤓😂",
+"مرة واحد من الفيوم مات..   أهله صوصوا عليه.🤓😂",
+"ﻣﺮه واﺣﺪ ﻣﺴﻄﻮل ﻣﺎﺷﻰ ﻓﻰ اﻟﺸﺎرع ﻟﻘﻰ مذﻳﻌﻪ ﺑﺘﻘﻮﻟﻪ ﻟﻮ ﺳﻤﺤﺖ ﻓﻴﻦ اﻟﻘﻤﺮ؟    ﻗﺎﻟﻬﺎ اﻫﻮه..   ﻗﺎﻟﺘﻠﻮ ﻣﺒﺮوك ﻛﺴﺒﺖ ﻋﺸﺮﻳﻦ ﺟﻨﻴﻪ..   ﻗﺎﻟﻬﺎ ﻓﻰ واﺣﺪ ﺗﺎﻧﻰ ﻫﻨﺎك اﻫﻮه.🤓😂",
+"مره واحد شاط كرة فى المقص..   اتخرمت. 🤓😂",
+"مرة واحد رايح لواحد صاحبه.. فا البواب وقفه بيقول له انت طالع لمين.. قاله طالع أسمر شوية لبابايا.. قاله يا أستاذ طالع لمين في العماره 🤓😂",
+} 
+send(msg.chat_id_, msg.id_,'['..TWEET_Msg[math.random(#TWEET_Msg)]..']')  
+return false 
+end
 if text and text ~="صراحه" and database:get(bot_id..":"..msg.sender_user_id_..":rkko_Bots"..msg.chat_id_) == "sendrkkoe" then
 numj = {"اي الكدب دا 😒","فعلا بتتكلم صح🤗","يجدع قول كلام غير دا😹","حصل اوماال😹◍","طب عيني ف عينك كدا 👀","انت صح🙂♥",};
 sendnuj = numj[math.random(#numj)]
@@ -8370,6 +8594,134 @@ send(msg.chat_id_, msg.id_,xl)
 database:del(bot_id..":"..msg.sender_user_id_..":ano_Bots"..msg.chat_id_)
 end
 ------------
+if text == "كتبات" or text == "حكمه" or text == "قصيده" then 
+local TWEET_Msg = { 
+"‏من ترك أمرهُ لله، أعطاه الله فوق ما يتمنَّاه💙 ", 
+"‏من علامات جمال المرأة .. بختها المايل ! ",
+"‏ انك الجميع و كل من احتل قلبي🫀🤍",
+"‏ ‏ لقد تْعَمقتُ بكَ كَثيراً والمِيمُ لام .♥️",
+"‏ ‏ممكن اكون اختارت غلط بس والله حبيت بجد🖇️",
+"‏ علينا إحياء زَمن الرّسائل الورقيّة وسط هذه الفوضى الالكترونية العَارمة.🔘💜",
+"‏ يجي اي الصاروخ الصيني ده جمب الصاروخ المصري لما بيلبس العبايه السوده.🤩♥️",
+"‏ كُنت أرقّ من أن أتحمّل كُل تلك القَسوة من عَينيك .🍍",
+"‏أَكَان عَلَيَّ أَنْ أغْرَس انيابي فِي قَلْبِك لتشعر بِي ؟.",
+"‏ : كُلما أتبع قلبي يدلني إليك .",
+"‏ : أيا ليت من تَهواه العينُ تلقاهُ .",
+"‏ ‏: رغبتي في مُعانقتك عميقة جداً .🥥",
+"ويُرهقني أنّي مليء بما لا أستطيع قوله.✨",
+"‏ من مراتب التعاسه إطالة الندم ع شيء إنتهى. 🔘 ",
+"‏ ‏كل العالم يهون بس الدنيا بينا تصفي 💙",
+"‏ بعض الاِعتذارات يجب أن تُرفَضّ.",
+"‏ ‏تبدأ حياتك محاولاً فهم كل شيء، وتنهيها محاولاً النجاة من كل ما فهمت.",
+"‏ إن الأمر ينتهي بِنا إلى أعتياد أي شيء.",
+"‏ هل كانت كل الطرق تؤدي إليكِ، أم أنني كنتُ أجعلها كذلك.",
+"‏ ‏هَتفضل توآسيهُم وآحد ورآ التآني لكن أنتَ هتتنسي ومحدِش هَيوآسيك.",
+"‏ جَبَرَ الله قلوبِكُم ، وقَلبِي .🍫",
+"‏ بس لما أنا ببقى فايق، ببقى أبكم له ودان.💖",
+"‏ ‏مقدرش عالنسيان ولو طال الزمن 🖤",
+"‏ أنا لستُ لأحد ولا احد لي ، أنا إنسان غريب أساعد من يحتاجني واختفي.",
+"‏ ‏أحببتك وأنا منطفئ، فما بالك وأنا في كامل توهجي ؟",
+"‏ لا تعودني على دفء شمسك، إذا كان في نيتك الغروب .َ",
+"‏ وانتهت صداقة الخمس سنوات بموقف.",
+"‏ ‏لا تحب أحداً لِدرجة أن تتقبّل أذاه.",
+"‏ إنعدام الرّغبة أمام الشّيء الّذي أدمنته ، انتصار.",
+"‏مش جايز , ده اكيد التأخير وارهاق القلب ده وراه عوضاً عظيماً !💙 ",
+" مش جايز , ده اكيد التأخير وارهاق القلب ده وراه عوضاً عظيماً !💙",
+"فـ بالله صبر  وبالله يسر وبالله عون وبالله كل شيئ ♥️. ",
+"أنا بعتز بنفسي جداً كصاحب وشايف اللي بيخسرني ، بيخسر أنضف وأجدع شخص ممكن يشوفه . ",
+"فجأه جاتلى قافله ‏خلتنى مستعد أخسر أي حد من غير ما أندم عليه . ",
+"‏اللهُم قوني بك حين يقِل صبري... ",
+"‏يارب سهِل لنا كُل حاجة شايلين هَمها 💙‏ ",
+"انا محتاج ايام حلوه بقي عشان مش نافع كدا ! ",
+"المشكله مش اني باخد قررات غلط المشكله اني بفكر كويس فيها قبل ما اخدها .. ",
+"تخيل وانت قاعد مخنوق كدا بتفكر فالمزاكره اللي مزكرتهاش تلاقي قرار الغاء الدراسه .. ",
+" مكانوش يستحقوا المعافرة بأمانه.",
+"‏جمل فترة في حياتي، كانت مع اكثر الناس الذين أذتني نفسيًا. ",
+" ‏إحنا ليه مبنتحبش يعني فينا اي وحش!",
+"أيام مُمله ومستقبل مجهول ونومٌ غير منتظموالأيامُ تمرُ ولا شيَ يتغير ", 
+"عندما تهب ريح المصلحه سوف ياتي الجميع رتكدون تحت قدمك ❤️. ",
+"عادي مهما تعادي اختك قد الدنيا ف عادي ❤. ",
+"بقيت لوحدي بمعنا اي انا اصلا من زمان لوحدي.❤️ ",
+"- ‏تجري حياتنا بما لاتشتهي أحلامنا ! ",
+"تحملين كل هذا الجمال، ‏ألا تتعبين؟",
+"البدايات للكل ، والثبات للصادقين ",
+"مُؤخرًا اقتنعت بالجملة دي جدا : Private life always wins. ",
+" الافراط في التسامح بيخللي الناس تستهين بيك🍍",
+"مهما كنت كويس فـَ إنت معرض لـِ الاستبدال.. ",
+"فخوره بنفسي جدًا رغم اني معملتش حاجه فـ حياتي تستحق الذكر والله . ",
+"‏إسمها ليلة القدر لأنها تُغير الأقدار ,اللهُمَّ غير قدري لحالٍ تُحبه وعوضني خير .. ",
+"فى احتمال كبير انها ليلة القدر ادعوا لنفسكم كتير وأدعو ربنا يشفى كل مريض. 💙 ",
+"أنِر ظُلمتي، وامحُ خطيئتي، واقبل توبتي وأعتِق رقبتي يا اللّٰه. إنكَ عفوٌّ تُحِبُّ العفوَ؛ فاعفُ عني 💛 ", 
+} 
+send(msg.chat_id_, msg.id_,'['..TWEET_Msg[math.random(#TWEET_Msg)]..']')  
+return false 
+end
+if text == "انصحني" or text == "انصحنى" or text == "انصح" then 
+local TWEET_Msg = { 
+"عامل الناس بأخلاقك ولا بأخلاقهم", 
+"الجمال يلفت الأنظار لكن الطيبه تلفت القلوب ", 
+"الاعتذار عن الأخطاء لا يجرح كرامتك بل يجعلك كبير في نظر الناس ",
+"لا ترجي السماحه من بخيل.. فما في البار لظمان ماء",
+"لا تحقرون صغيره إن الجبال من الحصي",
+"لا تستحي من إعطاء فإن الحرمان أقل منه ", 
+"لا تظلم حتى لا تتظلم ",
+"لا تقف قصاد الريح ولا تمشي معها ",
+"لا تكسب موده التحكم الا بالتعقل",
+"لا تمد عينك في يد غيرك ",
+"لا تملح الا لمن يستحقاها ويحافظ عليها",
+"لا حياه للإنسان بلا نبات",
+"لا حياه في الرزق.. ولا شفاعه في الموت",
+"كما تدين تدان",
+"لا دين لمن لا عهد له ",
+"لا سلطان على الدوق فيما يحب أو بكره",
+"لا مروه لمن لادين له ",
+"لا يدخل الجنه من لايأمن من جازه بوائقه",
+"يسروا ولا تعسروا... ويشورا ولا تنفروا",
+"يدهم الصدر ما يبني العقل الواسع ",
+"أثقل ما يوضع في الميزان يوم القيامة حسن الخلق ",
+"أجهل الناس من ترك يقين ما عنده لظن ما عند الناس ",
+"أحياناً.. ويصبح الوهم حقيقه ",
+"مينفعش تعاتب حد مبيعملش حساب لزعلك عشان متزعلش مرتين . ",
+"السفر ومشاهده اماكن مختلفه وجديده ",
+"عدم تضيع الفرص واسثمارها لحظه مجبئها ",
+" اعطاء الاخرين اكثر من ما يتوقعون",
+"معامله الناس بلطف ولكن عدم السماح لاحد بستغالال ذالك ",
+"تكوين صدقات جديده مع الحفظ بلاصدقاء القودامي ",
+"تعلم اصول المهنه بدلا من تضيع الوقت ف تعلم حيل المهنه ",
+"مدح ع الاقل ثلاث اشخاص يوميا ",
+"النظر ف عيون الشخاص عند مخاطبتهم ",
+"التحلي بلسماح مع الاخرين او النفس ",
+"الاكثار من قول كلمه شكرا ",
+" مصافحه الاخرين بثبات وقوة ",
+"الابتعاد عن المناطق السيئه السمعه لتجنب الاحداث السئه ",
+" ادخار 10٪ع الاقل من الدخل",
+" تجنب المخاوف من خلال التعلم من تجارب مختلفه",
+" الحفاظ ع السمعه لانها اغلي ما يملك الانسان",
+" تحويل الاعداء الي اصدقاء من خلال القيام بعمل جيد",
+"لا تصدق كل ما تسمعع. ولا تنفق كل ما تمتلك . ولا تنم قدر ما ترغب ",
+" اعتني بسمعتك جيدا فستثبت للك الايام انها اغلي ما تملك",
+"حين تقول والدتك ستندم ع فعل ذالك ستندم عليه غالبا.. ",
+" لا تخش العقبات الكبيره فخلفها تقع الفرص العظيمه",
+"قد لا يتطلب الامر اكثر من شخص واحد لقلب حياتك رأس ع عقب ",
+"اختر رفيقه حياتك بحرص فهو قرار سيشكل 90٪من سعادتك او بؤسك ",
+" اقلب اداءك الاصدقاء بفعل شي جميل ومفجائ لهم",
+"حين تدق الفرصه ع باباك ادعوها للبيت ",
+"تعلم القواعد جيدا ثن اكسر بعدها ",
+"احكم ع نجاحك من خلال قدرتك ع العطاء وليس الاخذ ",
+" لا تتجاهل الشيطان مهما بدل ثيابه",
+"ركز ع جعل الاشياء افضل وليس اكبر او اعظم ",
+"كن سعيد  بما تمتلك واعمل لامتلاك ما تريد ",
+"اعط الناس اكثر من ما يتوقعون ",
+" لا تكن منشغل لدرجه عدم التعرف ع اصدقاء جدد",
+"استحمه يوم العيد يمعفن🤓",
+"مش تحب اي حد يقرب منك ",
+" خليك مع البت راجل خليك تقيل🥥",
+" انصح نفسك بنفسك بمت😆",
+" كنت نصحت نفسي ياخويا😹", 
+} 
+send(msg.chat_id_, msg.id_,'['..TWEET_Msg[math.random(#TWEET_Msg)]..']')  
+return false 
+end
 if text == "تويت" or text == "كت تويت" then
 local TWEET_Msg = {
 " انت حزين اول شخص تتصل عليه؟",
@@ -8450,7 +8802,7 @@ keyboard.inline_keyboard = {
 {text = 'english 𝅘𝅥𝅮', callback_data=msg.sender_user_id_.."/hlep"}, {text = 'عربي 𝅘𝅥𝅮', callback_data=msg.sender_user_id_.."/help"}, 
 },
 {
-{text = 'اضف البوت لمجموعتك', url="t.me/Xx_SorceVambair_xX"}, 
+{text = 'اضف البوت لمجموعتك', url="t.me/BANDA1M"}, 
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -8624,7 +8976,7 @@ Text = [[
 ◍ الكلايش
 ◍ السيلفي
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-◍ Ch ~⪼ [@Xx_SorceVambair_xX]
+◍ Ch ~⪼ [@BANDA1M]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8690,7 +9042,7 @@ Text = [[
 ◍ الصلاحيات
 ◍ الرابط
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-◍ CH [@Xx_SorceVambair_xX]
+◍ CH [@BANDA1M]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8717,7 +9069,7 @@ Text = [[
 ♨️┇تعين/مسح الايدي
 
 🖇┇رفع الادمنيه
-🖇┇اضف/حذف رد
+??┇اضف/حذف رد
 📋┇الادمنيه
 📋┇الردود
 
@@ -8734,7 +9086,7 @@ Text = [[
 تغير رد المميز + النص
 تغير رد العضو + النص
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-◍ CH [@Xx_SorceVambair_xX]
+◍ CH [@BANDA1M]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8759,7 +9111,7 @@ Text = [[
 ➕┇اضف رسائل + العدد بالرد
 ➕┇اضف نقاط + العدد بالرد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-◍ CH [@Xx_SorceVambair_xX]
+◍ CH [@BANDA1M]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8806,7 +9158,7 @@ Text = [[
 ➕┇اذاعه بالتثبيت 
 ➕┇الاحصائيات 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-◍ CH [@Xx_SorceVambair_xX]
+◍ CH [@BANDA1M]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8857,7 +9209,7 @@ Text = [[
 ◍ تاك للمطلقات
 √ مسح المطلقات
 
-彡 .[SOURCE VAMBAIR ◍](t.me/Xx_SorceVambair_xX)
+彡 .[SOURCE VAMBAIR ◍](t.me/BANDA1M)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9001,7 +9353,7 @@ local Text =[[
 ◍ 5 ~⪼ To view developers' orders
 ◍ m6 ~⪼ To view entertainment orders 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-◍ CH [@Xx_SorceVambair_xX]
+◍ CH [@BANDA1M]
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -9393,7 +9745,6 @@ if text == '/start' then
 if DevBOYKAW(msg) then
 local Text = '◍ مرحبا بك في اوامر المطور الجاهزه'
 local keyboard = {
-{'مبرمج فيمبر','قناه السورس'},
 {"تغير اسم البوت ◍"},
 {'تفعيل التواصل ◍','تعطيل التواصل ◍'},
 {'تفعيل البوت الخدمي ◍','تعطيل البوت الخدمي ◍'},
@@ -9486,30 +9837,6 @@ if text =='الاحصائيات ◍' then
 local Groups = database:scard(bot_id..'VAMBAIR:Chek:Groups')  
 local Users = database:scard(bot_id..'VAMBAIR:UsersBot')  
 send(msg.chat_id_, msg.id_,'◍ احصائيات البوت \n\n◍ عدد المجموعات *~ '..Groups..'\n◍ عدد المشتركين ~ '..Users..'*')
-end
-if text == 'مبرمج فيمبر' then
-database:del(bot_id..'Srt:Bot') 
-local Text = [[ 
-[DEV VAMBAIR](t.me/V_a_a_m_b_a_I_r)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'VAMBAIR ◍', url="t.me/V_a_a_m_b_a_I_r"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'قناه السورس' then
-database:del(bot_id..'Srt:Bot') 
-local Text = [[ 
-[CH VAMBAIR](t.me/Xx_SorceVambair_xX)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'CH VAMBAIR ◍', url="t.me/Xx_SorceVambair_xX"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "مسح المشتركين ◍" then
 local pv = database:smembers(bot_id..'VAMBAIR:UsersBot')  
@@ -9813,8 +10140,6 @@ local Text = data.payload_.data_
 if Text and Text:match('(.*)/help1') then
 if tonumber(Text:match('(.*)/help1')) == tonumber(data.sender_user_id_) then
 local Teext =[[
-𖠦 𝕊𝕆𝕌ℝℂ𝔼 𝔸𝕃𝔸ℤ𝕀ℤ𝔸
-──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ◍ قائمة اوامر الحماية..↑↓
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ◍ قـفـل او فـتـح + الامــر.
@@ -9850,7 +10175,7 @@ local Teext =[[
 ◍ التكرار.
 ◍ السب.
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -9865,8 +10190,6 @@ end
 if Text and Text:match('(.*)/help2') then
 if tonumber(Text:match('(.*)/help2')) == tonumber(data.sender_user_id_) then
 local Teext =[[
-𖠦 𝕊𝕆𝕌ℝℂ𝔼 𝔸𝕃𝔸ℤ𝕀ℤ𝔸
-──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ◍ قائمة اوامر الادمنية..↑↓
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ◍ رفع او تنزيل مميز.
@@ -9930,7 +10253,7 @@ local Teext =[[
 ◍ الصـوره.
 ◍ الرابـط.
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -9954,7 +10277,7 @@ local Teext =[[
 ◍ حذف «← بيع ❬ نقاطي ❭
 ◍ رسائلي «← حذف ❬ رسائلي ❭
 ◍ «← الالعاب
-◍ فامبير «← الرابط
+◍ العزايزي «← الرابط
 ◍ اسمي «← الرتبه
 ◍ جهاتي «← حذف جهاتي
 ◍ قول + الكلمه
@@ -9985,8 +10308,6 @@ end
 if Text and Text:match('(.*)/help4') then
 if tonumber(Text:match('(.*)/help4')) == tonumber(data.sender_user_id_) then
 local Teext =[[
-𖠦 𝕊𝕆𝕌ℝℂ𝔼 𝔸𝕃𝔸ℤ𝕀ℤ𝔸
-──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ◍ قائمة اوامر المدراء والمنشئ..↑↓
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ◍ رفع او تنزيل ادمن
@@ -10039,7 +10360,7 @@ local Teext =[[
 ◍ مسح المدراء
 ◍ الـمـدراء
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -10054,8 +10375,6 @@ end
 if Text and Text:match('(.*)/help5') then
 if tonumber(Text:match('(.*)/help5')) == tonumber(data.sender_user_id_) then
 local Teext =[[
-𖠦 𝕊𝕆𝕌ℝℂ𝔼 𝔸𝕃𝔸ℤ𝕀ℤ𝔸
-──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ◍ قائمة اوامر المطورين..↑↓
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
         ╔═══════════════╗        
@@ -10099,7 +10418,7 @@ local Teext =[[
 ◍ المطورين 
 ◍ الغاء العام
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -10114,8 +10433,6 @@ end
 if Text and Text:match('(.*)/help6') then
 if tonumber(Text:match('(.*)/help6')) == tonumber(data.sender_user_id_) then
 local Teext =[[
-𖠦 𝕊𝕆𝕌ℝℂ𝔼 𝔸𝕃𝔸ℤ𝕀ℤ𝔸
-──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ◍ قائمة اوامر التسليه..↑↓
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ◍ رفع + تنزيل ← الامر
@@ -10123,6 +10440,34 @@ local Teext =[[
 ◍ رفع + تنزيل ← متوحد 
 ◍ تاك للمتوحدين
 ◍ مسح المتوحدين
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+◍ رفع + تنزيل ← عبيط
+◍ تاك للعبايط
+◍ مسح العبايط
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+◍ رفع + تنزيل ← خاين
+◍ تاك للخونه
+◍ مسح الخونه
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+◍ رفع + تنزيل ← مراتي
+◍ تاك لمرتاتي
+◍ مسح مرتاتي
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+◍ رفع + تنزيل ← شاذ
+◍ تاك للشواذ
+◍ مسح الشواذ
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+◍ رفع + تنزيل ← خطبتي
+◍ تاك لخطبتي
+◍ مسح خطبتي
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+◍ رفع + تنزيل ← علق
+◍ تاك للعلوق
+◍ مسح العلوق
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+◍ رفع + تنزيل ← مزه
+◍ تاك للمزز
+◍ مسح المزز
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ◍ رفع + تنزيل ← وتكه
 ◍ تاك للوتكات
@@ -10161,7 +10506,7 @@ local Teext =[[
 ◍ تاك للمطلقات
 ◍ مسح المطلقات
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -10181,7 +10526,7 @@ local Teext =[[
 ◍ اليك الاوامر الخاص بسورس العزايزي .
 ◍ اختر الامر الذي تريده من الازرار بلاسفل .
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -10219,7 +10564,7 @@ keyboard.inline_keyboard = {
 {text = 'english 𝅘𝅥𝅮 ', callback_data=data.sender_user_id_.."/hlep"},{text = 'عربي 𝅘𝅥𝅮', callback_data=data.sender_user_id_.."/help"},
 },
 {
-{text = 'اضف البوت لمجموعتك', url="t.me/Xx_SorceVambair_xX"}, 
+{text = 'اضف البوت لمجموعتك', url="t.me/BANDA1M"}, 
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -10267,7 +10612,7 @@ local Teext =[[
 ◍ Bots
 ◍ Prohibited
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -10312,7 +10657,7 @@ local Teext =[[
 ◍ Crown for cats
 ◍ Cats survey
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -10363,7 +10708,7 @@ local Teext =[[
 ◍ Crown for Paradise
 ◍ Storage survey
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -10414,7 +10759,7 @@ local Teext =[[
 ◍ Mido «← ←
 ◍ Delete link
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -10471,7 +10816,7 @@ local Teext =[[
 ◍ Preventors General
 ◍ Canceling the general
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -10516,7 +10861,7 @@ local Teext =[[
 ◍ Crown for cats
 ◍ Cats survey
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 -[𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
 keyboard = {} 
@@ -10536,7 +10881,7 @@ local Teext =[[
 ◍ You can use the buttons..↑↓
 ◍ By putting pressure on them..↑↓
 ──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
-◍ 𝘊𝘩 - [𝔸𝕃𝔸ℤ𝕀ℤÝ](t.me/Xx_SorceVambair_xX)
+◍ 𝘾𝙃 - [𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝘼𝙕𝙄𝙕𝙔](t.me/BANDA1M) 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -10861,7 +11206,7 @@ keyboard.inline_keyboard = {
 {text = 'تعطيل الردود ◍', callback_data=data.sender_user_id_.."/lockrepgr"},{text = 'تفعيل الردود ◍', callback_data=data.sender_user_id_.."/unlockrepgr"},
 },
 {
-{text = 'العوده ◍', callback_data=data.sender_user_id_.."/help"},
+{text = '☊.رجوع.☊', callback_data=data.sender_user_id_.."/help"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Texti)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -11498,7 +11843,7 @@ keyboard.inline_keyboard = {
 {text = 'قفل الانلاين ◍', callback_data=data.sender_user_id_.."/lockinlene"},{text = 'فتح الانلاين ◍', callback_data=data.sender_user_id_.."/unlockinlene"},
 },
 {
-{text = 'العوده ◍', callback_data=data.sender_user_id_.."/help"},
+{text = '☊.رجوع.☊', callback_data=data.sender_user_id_.."/help"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Texti)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -11670,7 +12015,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."VAMBAIR:Name:Bot") or "فامبير")
+local Name_Bot = (database:get(bot_id.."VAMBAIR:Name:Bot") or "العزايزي")
 if not database:get(bot_id.."VAMBAIR:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' اي رأيك ف دا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
