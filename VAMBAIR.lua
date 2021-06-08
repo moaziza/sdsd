@@ -6889,22 +6889,45 @@ send(msg.chat_id_, msg.id_, namebot[name])
 return false 
 end
 
-if text == "بوت" or text == 'البوت' then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'السعودي')
-local DRAGON_Msg = {
-'اسمي  '..Namebot..' يا قلبي 🤤💚',
-'اسمي '..Status_Gps..' يا روحي🙈❤️',
+if text == 'بوت' and tonumber(msg.reply_to_message_id_) == 0 and not database:get(bot_id..'VAMBAIR:Lolk:ID:Bot'..msg.chat_id_) then
+if not database:sismember(bot_id..'VAMBAIR:Spam:Group'..msg.sender_user_id_,text) then
+database:sadd(bot_id.."VAMBAIR:Spam:Group"..msg.sender_user_id_,text) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,taha,success) 
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
+local Id = msg.sender_user_id_
+local NumMsg = database:get(bot_id..'VAMBAIR:messageUser'..msg.chat_id_..':'..msg.sender_user_id_) or 0
+local TotalMsg = Total_message(NumMsg)
+local Status_Gps = Get_Rank(Id,msg.chat_id_)
+local message_edit = database:get(bot_id..'VAMBAIR:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
+local Num_Games = database:get(bot_id.."Tshak:Add:Num"..msg.chat_id_..msg.sender_user_id_) or 0
+local Add_Mem = database:get(bot_id.."VAMBAIR:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
+local Total_Photp = (taha.total_count_ or 0)
+local Texting = {
+"◍ ",
 }
-
-Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)]
-local function getpro(extra, result, success)
-if result.photos_[0] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,Namebot, msg.id_, msg.id_, "md")
+local Description = Texting[math.random(#Texting)]
+local get_id = database:get(bot_id.."VAMBAIR:Klesh:Id:Bot"..msg.chat_id_)
+if not database:get(bot_id..'VAMBAIR:Lock:ID:Bot:Photo'..msg.chat_id_) then
+if taha.photos_[0] then
+if get_id then
+local get_id = get_id:gsub('#AddMem',Add_Mem) 
+local get_id = get_id:gsub('#id',Id) 
+local get_id = get_id:gsub('#username',UserName_User) 
+local get_id = get_id:gsub('#edit',message_edit) 
+local get_id = get_id:gsub('#stast',Status_Gps) 
+local get_id = get_id:gsub('#auto',TotalMsg) 
+local get_id = get_id:gsub('#photos',Total_Photp) 
+sendPhoto(msg.chat_id_,msg.id_,taha.photos_[0].sizes_[1].photo_.persistent_id_,get_id)
 else
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md')
+sendPhoto(msg.chat_id_,msg.id_,taha.photos_[0].sizes_[1].photo_.persistent_id_,''..Description..'نعم حبيبي '..Status_Gps)
+end
+else
+send(msg.chat_id_, msg.id_,'نعم حبيبي'..Status_Gps..'*') 
 end
 end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil)
+end,nil)   
+end,nil)   
+end
 end
 
 if text == "بوت" then
